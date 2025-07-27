@@ -146,42 +146,75 @@ footer .footerBottom{
 
 .herosection {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 100px;
+    min-height: 75vh;
+    background: #fff;
+    margin-top: 40px;
 }
 
 .herosection .left {
-    width: 60%;
     flex: 1;
-    padding: 20px;
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    margin-right: 40px;
 }
+
 
 .herosection .right {
     width: 40%;
     padding: 20px;
 }
-.herosection .left h2{
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+.herosection .left h2 {
+    font-size: 2.5rem;
     font-weight: 400;
-    font-size: 2.125rem;
-    line-height: 1.235;
-    letter-spacing: 0.00735em;
+    margin-bottom: 30px;
+    color: #222;
 }
+
 .herosection .left h1 {
-           font-size: 4rem;
-        line-height: 5rem;
-    
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    color: #222;
 }
+.herosection .left h1 + h1 {
+    color: #7c4dff;
+    margin-bottom: 20px;
+}
+
+
 .herosection .left p {
     font-size: 1.2rem;
-    
+    margin-top: 30px;
+    color: #222;
 }
-.herosection .right img {
-    width: 100%;
-    height: auto;
+.herosection .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;           /* Remove top margin */
+    margin-right: 100px;     /* Add right margin for spacing from the edge */
 }
+.hero-img {
+   max-width: 100%;
+    height: auto;       /* Fixed height */
+    object-fit: cover;
+    border-radius: 24px;
+   
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border: none;          /* Remove border */
+    display: block;
+}
+
+
+
+
 /* ------------------------------------------------------ */
 /* ...existing code... */
 .section-2 {
