@@ -333,9 +333,10 @@ footer .footerBottom{
 }
 
 .section-3 .card img {
-    width: 120px;
+    width: 160px;
     height: auto;
     margin: 24px auto 0 auto;
+    padding-bottom: 30px;
     display: block;
 }
 
@@ -346,16 +347,26 @@ footer .footerBottom{
 .section-3 .card.orange { background: #ffe6b2; }
 .section-3 .card.purple { background: #f0e3ff; }
 
-/* ...existing code... */
-
-/* Arrange cards: pink, blue, yellow (top row), orange, purple (bottom row) */
-.section-3 .card:nth-child(1) { grid-column: 1; grid-row: 1; }
-.section-3 .card:nth-child(2) { grid-column: 2; grid-row: 1; }
-.section-3 .card:nth-child(3) { grid-column: 3; grid-row: 1; }
-.section-3 .card:nth-child(4) { grid-column: 1 / span 2; grid-row: 2; }
-.section-3 .card:nth-child(5) { grid-column: 2 / span 2; grid-row: 2; }
-
-/* ...existing code... */
+.section-3 .card:nth-child(1) { /* Pink */
+  grid-column: 1;
+  grid-row: 1;
+}
+.section-3 .card:nth-child(2) { /* Blue */
+  grid-column: 2;
+  grid-row: 1;
+}
+.section-3 .card:nth-child(3) { /* Yellow */
+  grid-column: 3;
+  grid-row: 1 / span 2;  /* ✅ Spans both rows */
+}
+.section-3 .card:nth-child(4) { /* Orange */
+  grid-column: 1;
+  grid-row: 2;
+}
+.section-3 .card:nth-child(5) { /* Purple */
+  grid-column: 2;
+  grid-row: 2;
+}
 
 
 
